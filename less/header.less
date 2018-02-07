@@ -1,0 +1,52 @@
+/**
+==================================================
+头部
+==================================================
+ */
+.g-header .header-top {
+    height: 32px;
+    line-height: 32px;
+    background: darkgoldenrod;
+}
+
+.g-header .header-bot {
+    height: 130px;
+    background: darkgoldenrod;
+}
+
+.g-header .logo img {
+    width: 260px;
+}
+
+.g-header .logo {
+    background: #000;
+    padding: 0 45px;
+    float: left;
+}
+
+// 搜索框
+.g-header .search {
+    padding-top:18px;
+    background: deeppink;
+    width: 360px;
+    float: left;
+}
+
+// 购物车
+.g-header .cart {
+    background: darkcyan;
+    width: @commonWidth - 260 - 90 - 360;
+    float: left;
+}
+
+.g-header {
+    .layui-nav {
+        background: transparent;
+    }
+
+    .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+        background-color: transparent;
+    }
+}
+
+
