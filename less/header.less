@@ -3,15 +3,10 @@
 头部
 ==================================================
  */
-.g-header .header-top {
-    height: 32px;
-    line-height: 32px;
-    background: darkgoldenrod;
-}
 
 .g-header .header-bot {
-    height: 130px;
-    background: darkgoldenrod;
+    height: 100px;
+    background: #fff;
 }
 
 .g-header .logo img {
@@ -19,34 +14,147 @@
 }
 
 .g-header .logo {
-    background: #000;
     padding: 0 45px;
     float: left;
 }
 
-// 搜索框
-.g-header .search {
-    padding-top:18px;
-    background: deeppink;
-    width: 360px;
-    float: left;
-}
+// 顶部
+@import "site_topbar";
 
 // 购物车
-.g-header .cart {
-    background: darkcyan;
-    width: @commonWidth - 260 - 90 - 360;
+@import "topbar_cart";
+
+// 搜索框
+@import "header_search";
+
+.site-topbar .count {
+    padding: 0 20px 20px;
+}
+
+.site-topbar .count em {
+    font-style: normal;
+}
+
+.site-topbar .count .total {
     float: left;
 }
 
-.g-header {
-    .layui-nav {
-        background: transparent;
-    }
-
-    .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
-        background-color: transparent;
-    }
+.site-topbar .count .total strong {
+    display: block;
+    line-height: 2em;
+    color: #ff6700;
+    font-weight: 400;
 }
+
+.site-topbar .count .total strong em {
+    font-size: 24px;
+}
+
+.site-topbar .count .btn {
+    float: right;
+    width: 130px;
+    color: #fff;
+    margin-top: 13px;
+    background: #ff6700;
+}
+
+.site-topbar .count .btn:hover {
+    background: #ff6700;
+}
+
+.site-topbar .topbar-info .link, .site-topbar .topbar-info .user, .site-topbar .topbar-info .sep {
+    float: left;
+    padding: 0 5px;
+}
+
+.site-topbar .topbar-info {
+    position: relative;
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    padding-right:10px;
+}
+
+.site-topbar .user, .site-mini-header .user {
+    position: relative;
+    width: 110px;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.site-topbar .user-name, .site-mini-header .user-name {
+    position: relative;
+    z-index: 5;
+    display: block;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+}
+
+.site-topbar .user-active .user-name, .site-mini-header .user-active .user-name {
+    background: #FFF;
+}
+
+.site-topbar .user-name .name, .site-mini-header .user-name .name {
+    display: inline-block;
+    width: auto;
+    _width: 75px;
+    max-width: 75px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    _zoom: 1;
+    vertical-align: text-bottom;
+}
+
+.site-topbar .user-active a:hover, .site-mini-header .user-active a:hover {
+    color: #FF6700;
+    text-decoration: none;
+}
+
+.site-topbar .user-name i, .site-mini-header .user-name i {
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: 6px;
+}
+
+.site-topbar .user-menu, .site-mini-header .user-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    left: -1px @ie678hack;
+    top: 40px;
+    z-index: 3;
+    width: 120px;
+    margin: 0;
+    padding: 7px 0;
+    border: 1px solid #e0e0e0 @ie678hack;
+    border-top: 0 @ie678hack;
+    list-style-type: none;
+    background: #FFF;
+    -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.site-topbar .user-menu a, .site-mini-header .user-menu a {
+    display: block;
+    padding: 3px 30px;
+    line-height: 2;
+}
+
+.site-topbar .user-active a, .site-mini-header .user-active a {
+    color: #424242;
+}
+
+.site-topbar .user-active .user-menu a, .site-mini-header .user-active .user-menu a {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+
+
+
+
 
 

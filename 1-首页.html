@@ -13,52 +13,203 @@
 <div class="w">
     <!--头部-->
     <div class="g-header">
-        <div class="header-top cl">
-            <span class="fl">apoase您的在线药房</span>
-            <span class="fr"><b>免费服务电话：</b> +49（0）800 700 71 00</span>
-        </div>
-        <div class="header-bot">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="search layui-inline">
-                <div class="layui-form-item">
-                    <label class="layui-form-label">输入框</label>
-                    <div class="layui-input-block">
-                        <input type="text" name="title" required lay-verify="required" placeholder="请输入标题"
-                               autocomplete="off" class="layui-input">
-                    </div>
+        <div class="site-topbar">
+            <div class="container">
+                <div class="topbar-nav">
+                    <a href="#" class="snc-link snc-order">apoase您的在线药房!</a>
                 </div>
-            </div>
-            <div class="cart">
-                <!--登录注册-->
-                <div class="cart-logreg layui-nav">
-                    <div class="layui-nav-item">
-                        <a href="javascript:void(0);">登录<span class="layui-nav-more"></span></a>
-                        <dl class="layui-nav-child layui-anim layui-anim-upbit">
-                            <dd><a href="">移动模块</a></dd>
-                            <dd><a href="">后台模版</a></dd>
-                            <dd><a href="">电商平台</a></dd>
-                        </dl>
-                    </div>
-                    <div class="layui-nav-item ">
-                        <a href="javascript:void(0);" class="reg">注册</a>
-                    </div>
+
+                <div class="topbar-info J_userInfo" id="ECS_MEMBERZONE">
+                    <a class="link" href="#" rel="nofollow">登录</a>
+                    <a class="link" href="#" rel="nofollow">注册</a>
+                    <span class="link"><b>免费服务电话：</b> +49（0）800 700 71 00</span>
+
+
                 </div>
-                <!--// 登录注册-->
             </div>
         </div>
 
+
+        <div class="header-bot">
+            <!--logo-->
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!--// logo-->
+
+            <!--搜索框-->
+            <div class="header-search">
+                <form action="#" method="get" id="searchForm" name="searchForm"
+                      onsubmit="return checkSearchForm()" class="search-form cl">
+                    <input class="search-text" type="text" name="keywords" id="keyword" value="" autocomplete="off">
+                    <button type="submit" class="search-btn iconfontecs"></button>
+                </form>
+            </div>
+            <!--// 搜索框-->
+
+            <!--购物车-->
+            <div class="topbar-cart" id="ECS_CARTINFO">
+                <a class="cart-mini " href="#">
+                    <i class="iconfontecs"></i>
+                    购物车
+                    <span class="mini-cart-num J_cartNum" id="hd_cartnum">(0)</span>
+                </a>
+                <div id="J_miniCartList" class="cart-menu" style="display: none;">
+                    <p class="loading">购物车中还没有商品，赶紧选购吧！</p>
+
+                </div>
+            </div>
+            <!--// 购物车-->
+        </div>
     </div>
     <!--// 头部-->
+
+    <!--水平导航-->
+    <div class="g-nav">
+        <ul class="nav-list">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">特别优惠</a></li>
+            <li><a href="#">冷</a></li>
+            <li><a href="#">母亲和孩子</a></li>
+            <li><a href="#">PAIN</a></li>
+            <li><a href="#">重做食谱</a></li>
+        </ul>
+    </div>
+    <!--// 水平导航-->
+
+
+    <!--楼层-->
+    <div class="g-floor cl">
+        <!--侧边栏-->
+        <div class="sidebar fl">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="dt" href="javascript:;">过敏和干草热</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">口服药物</a></dd>
+                        <dd><a href="javascript:;">眼睛</a></dd>
+                        <dd><a href="javascript:;">鼻子</a></dd>
+                        <dd><a href="javascript:;">过敏性皮肤反应</a></dd>
+                        <dd><a href="javascript:;">替代的补救措施</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="dt" href="javascript:;">过敏和干草热</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">口服药物</a></dd>
+                        <dd><a href="javascript:;">眼睛</a></dd>
+                        <dd><a href="javascript:;">鼻子</a></dd>
+                        <dd><a href="javascript:;">过敏性皮肤反应</a></dd>
+                        <dd><a href="javascript:;">替代的补救措施</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="dt" href="javascript:;">过敏和干草热</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">口服药物</a></dd>
+                        <dd><a href="javascript:;">眼睛</a></dd>
+                        <dd><a href="javascript:;">鼻子</a></dd>
+                        <dd><a href="javascript:;">过敏性皮肤反应</a></dd>
+                        <dd><a href="javascript:;">替代的补救措施</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a class="dt" href="">孩子和家庭</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="dt" href="">其他补救措施</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <!--// 侧边栏-->
+        <!--右侧内容栏目-->
+        <div class="content fr">
+            <!--轮播图-->
+            <div class="layui-carousel" id="indexCarousel">
+                <div carousel-item>
+                    <div>条目1</div>
+                    <div>条目2</div>
+                    <div>条目3</div>
+                    <div>条目4</div>
+                    <div>条目5</div>
+                </div>
+            </div>
+            <!--// 轮播图-->
+            <!--tab选项卡-->
+            <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                <ul class="layui-tab-title">
+                    <li class="layui-this">网站设置</li>
+                    <li>用户管理</li>
+                    <li>权限分配</li>
+                    <li>商品管理</li>
+                    <li>订单管理</li>
+                </ul>
+                <div class="layui-tab-content">
+                    <div class="layui-tab-item layui-show">1</div>
+                    <div class="layui-tab-item">2</div>
+                    <div class="layui-tab-item">3</div>
+                    <div class="layui-tab-item">4</div>
+                    <div class="layui-tab-item">5</div>
+                    <div class="layui-tab-item">6</div>
+                </div>
+            </div>
+            <!--// tab选项卡-->
+        </div>
+        <!--// 右侧内容栏目-->
+    </div>
+    <!--//楼层-->
+
 </div>
+
+
 <script src="layui.all.js"></script>
 <script>
     var element = layui.element;
+    var $ = layui.$;
     //监听导航点击
     element.on('nav(demo)', function (elem) {
         console.log(elem)
     });
+</script>
+<script>
+    /**
+     * 判断搜素框是否有内容
+     *
+     * */
+    function checkSearchForm() {
+        if (document.getElementById('keyword').value) {
+            return true;
+        }
+        else {
+            alert("请输入搜索关键词！");
+            return false;
+        }
+    }
+
+    /*购物车弹出 strat*/
+    $("#ECS_CARTINFO").on("mouseenter", function () {
+        $(this).addClass("topbar-cart-active");
+        $(this).find(".cart-menu").slideDown();
+    }).on("mouseleave", function () {
+        $(this).removeClass("topbar-cart-active");
+        $(this).find(".cart-menu").stop().slideUp(300, function () {
+            $(".cart-section").removeClass("cart-section-on");
+        });
+    })
+    /*购物车弹出 end*/
+    /*轮播*/
+    var carousel = layui.carousel;
+    //建造实例
+    carousel.render({
+        elem: '#indexCarousel'
+        , width: '100%' //设置容器宽度
+        , arrow: 'always' //始终显示箭头
+        //,anim: 'updown' //切换动画方式
+    });
+    /*// 轮播*/
 </script>
 </body>
 </html>
