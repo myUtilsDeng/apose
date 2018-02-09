@@ -513,8 +513,6 @@
                 </div>
             </div>
             <!--// tab选项卡-->
-
-
         </div>
         <!--// 右侧内容栏目-->
     </div>
@@ -590,20 +588,85 @@
     <!--// 楼层3-->
 
     <!--楼层4-->
+    <div class="g-floor">
+        <div class="our-brand">
+            <div class="custom-container cl" id="jcl-demo">
+                <a href="#" class="prev">&lsaquo;</a>
+                <a href="#" class="next">&rsaquo;</a>
+                <div class="carousel">
+                    <ul>
+                        <li><img src="./img/brand1.jpg"></li>
+                        <li><img src="./img/brand2.jpg" alt=""></li>
+                        <li><img src="./img/brand3.jpg" alt=""></li>
+                        <li><img src="./img/brand4.jpg" alt=""></li>
+                        <li><img src="./img/brand5.jpg" alt=""></li>
+                        <li><img src="./img/brand6.jpg" alt=""></li>
+                        <li><img src="./img/brand7.jpg" alt=""></li>
+                        <li><img src="./img/brand8.jpg" alt=""></li>
+                        <li><img src="./img/brand9.jpg" alt=""></li>
+                        <li><img src="./img/brand10.jpg" alt=""></li>
+                        <li><img src="./img/brand11.jpg" alt=""></li>
+                        <li><img src="./img/brand12.jpg" alt=""></li>
+                        <li><img src="./img/brand13.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--// 楼层4-->
-
 </div>
 
 
+<!--底部-->
+<div class="g-footer"· >
+    <div class="m-footer">
+        <div class="list cl">
+            <dl>
+                <dt>
+                    公司
+                </dt>
+                <dd><a href="#">· 关于我们</a></dd>
+                <dd><a href="#">· 工作与职业</a></dd>
+                <dd><a href="#">· 按</a></dd>
+            </dl>
+            <dl>
+                <dt>手术</dt>
+                <dd><a href="#">· 顺序</a></dd>
+                <dd><a href="#">· 运送和交付</a></dd>
+                <dd><a href="#">· 兑换食谱</a></dd>
+                <dd><a href="#">· 打印免费门票</a></dd>
+                <dd><a href="#">· 问题与解答</a></dd>
+            </dl>
+            <dl>
+                <dt>法律</dt>
+                <dd><a href="#">· 付款</a></dd>
+                <dd><a href="#">· 隐私政策</a></dd>
+                <dd><a href="#">· 条件</a></dd>
+                <dd><a href="#">· 废止</a></dd>
+                <dd><a href="#">· 版本说明</a></dd>
+                <dd><a href="#">· 接触</a></dd>
+            </dl>
+        </div>
+        <div class="copyright">
+            <p>
+                AVP：通常药房销售价格根据药品价格管制计算。MSRP：来自制造商的建议零售价格。指示价格包括法定增值税。德国境内免运费，最低订单价值20欧元。价格变化和错误例外。所有优惠和免费礼物只有当股票持续。</p>
+            <p>有关风险和副作用，请阅读包装说明或咨询您的医生或药剂师。</p>
+        </div>
+    </div>
+</div>
+<!--// 底部-->
+
 <script src="layui.all.js"></script>
+
 <script>
     var element = layui.element;
-    var $ = layui.$;
+    var jQuery = $ = layui.$;
     //监听导航点击
     element.on('nav(demo)', function (elem) {
         console.log(elem)
     });
 </script>
+<script src="./js/jquery.jcarousellite.js"></script>
 <script>
     /**
      * 判断搜素框是否有内容
@@ -640,6 +703,13 @@
         //,anim: 'updown' //切换动画方式
     });
     /*// 轮播*/
+
+    $(".custom-container .carousel").jCarouselLite({
+        btnNext: ".custom-container .next",
+        btnPrev: ".custom-container .prev",
+        visible: 6,
+        auto: 2000
+    });
 </script>
 </body>
 </html>

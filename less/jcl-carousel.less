@@ -1,0 +1,49 @@
+#jcl-demo {
+    width: 100%;
+    position: relative;
+}
+
+#jcl-demo .carousel {
+    width: 100%;
+    background-color: ghostwhite;
+    float: left;
+}
+
+#jcl-demo .carousel > ul > li > img {
+    width: 150px;
+    height: 118px;
+    vertical-align: middle;
+    margin: 10px 10px 10px 0;
+    border-radius: 5px;
+}
+
+#jcl-demo a.prev, #jcl-demo a.next {
+    position: absolute;
+    top: 47px;
+    z-index: 999;
+    display: block;
+    width: 26px;
+    height: 50px;
+    line-height: 50px;
+    background-color: @greenBackground;
+    opacity: .5;
+    color: ghostwhite;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    float: left;
+}
+
+#jcl-demo a.prev {
+    text-indent: 7px;
+    left: 0;
+}
+
+#jcl-demo a.next {
+    text-indent: 10px;
+    right: 0;
+}
+
+#jcl-demo a.prev:hover, #jcl-demo a.next:hover {
+    background-color: #666666;
+}

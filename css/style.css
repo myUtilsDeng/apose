@@ -502,8 +502,10 @@ body {
 }
 /*是否存在*/
 .g-floor .exists {
-  padding: 0 20px;
+  margin-top: 30px;
+  padding: 30px 20px 0;
   height: 130px;
+  border-top: 1px solid #e0e0e0;
 }
 .g-floor .exists dl {
   width: 33.33%;
@@ -535,7 +537,11 @@ body {
   height: 50px;
 }
 .g-floor .money-go {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
   padding-left: 20px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 .g-floor .money-go h2 {
   font-weight: bold;
@@ -562,4 +568,90 @@ body {
   margin-right: 10px;
   width: 60px;
   height: 60px;
+}
+/*我们的品牌*/
+#jcl-demo {
+  width: 100%;
+  position: relative;
+}
+#jcl-demo .carousel {
+  width: 100%;
+  background-color: ghostwhite;
+  float: left;
+}
+#jcl-demo .carousel > ul > li > img {
+  width: 150px;
+  height: 118px;
+  vertical-align: middle;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+#jcl-demo a.prev,
+#jcl-demo a.next {
+  position: absolute;
+  top: 47px;
+  z-index: 999;
+  display: block;
+  width: 26px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #74a345;
+  opacity: .5;
+  color: ghostwhite;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  float: left;
+}
+#jcl-demo a.prev {
+  text-indent: 7px;
+  left: 0;
+}
+#jcl-demo a.next {
+  text-indent: 10px;
+  right: 0;
+}
+#jcl-demo a.prev:hover,
+#jcl-demo a.next:hover {
+  background-color: #666666;
+}
+.g-footer {
+  margin-top: 50px;
+  background: #274757;
+  color: #fff;
+}
+.g-footer .m-footer {
+  width: 960px;
+  margin: 0 auto;
+}
+.g-footer .m-footer .list {
+  padding-top: 20px;
+}
+.g-footer .m-footer .list dl {
+  width: 33.33%;
+  float: left;
+}
+.g-footer .m-footer .list dt {
+  font-size: 20px;
+}
+.g-footer .m-footer .list dt,
+.g-footer .m-footer .list dd {
+  height: 40px;
+  line-height: 40px;
+}
+.g-footer .m-footer .list dd {
+  margin-right: 20px;
+  border-top: solid 1px #393939;
+}
+.g-footer .m-footer a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+.g-footer .m-footer a:hover {
+  text-decoration: underline;
+}
+.g-footer .copyright {
+  padding-bottom: 100px;
 }
