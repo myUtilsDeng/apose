@@ -429,7 +429,7 @@ body {
   background: transparent !important;
 }
 .g-floor .sidebar .layui-nav-item:nth-child(2n+1) {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.05);
 }
 .g-floor .sidebar a {
   color: #333 !important;
@@ -452,6 +452,7 @@ body {
   float: left;
   border: 1px solid #e0e0e0;
   margin-right: 10px;
+  margin-bottom: 10px;
   -webkit-transition: border 0.3s linear, box-shadow 0.3s linear;
   transition: border 0.3s linear, box-shadow 0.3s linear;
 }
@@ -614,6 +615,32 @@ body {
 #jcl-demo a.prev:hover,
 #jcl-demo a.next:hover {
   background-color: #666666;
+}
+.g-breadcrumb {
+  padding: 20px 0 20px 5px;
+}
+.g-breadcrumb a {
+  color: #999 !important;
+}
+.g-breadcrumb .layui-breadcrumb a span {
+  color: #999;
+}
+.g-breadcrumb .layui-breadcrumb a:hover {
+  color: #74a345 !important;
+}
+.g-breadcrumb .layui-btn-group {
+  float: right;
+}
+.g-breadcrumb .layui-btn {
+  height: 28px;
+  line-height: 28px;
+  background-color: #74a345;
+}
+.m-page-nav {
+  text-align: center;
+}
+.m-page-nav .layui-laypage .layui-laypage-curr .layui-laypage-em {
+  background-color: #74a345;
 }
 .g-footer {
   margin-top: 50px;
