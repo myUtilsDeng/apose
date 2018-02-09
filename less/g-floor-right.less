@@ -1,5 +1,72 @@
 .g-floor {
-    .content{
-        width:unit(960 - 200 - 10,px);
+    .content {
+        width: unit(960 - 200 - 10, px);
     }
 }
+
+/*商品模块*/
+.m-shop-list {
+    margin-right: -10px;
+    li {
+        width: unit((730- 30 - 8 - 40 ) / 4, px);
+        padding: 5px;
+        float: left;
+        border: 1px solid @bordeColor;
+        margin-right: 10px;
+        transition:border .3s linear,box-shadow .3s linear;
+        &:hover {
+            border-color: @greenBackground;
+            box-shadow: 0 15px 30px rgba(116, 163, 69, 0.3);
+        }
+    }
+    .title {
+        padding: 5px 0 10px 0;
+        font-weight: bold;
+    }
+    .img-wrap {
+        display: block;
+        height: 140px;
+        overflow: hidden;
+        .img {
+            width: 100%;
+        }
+    }
+    .desc {
+        height: 40px;
+        padding: 5px 0;
+    }
+
+    // 价格
+    .price {
+        position: relative;
+        .origin-price {
+            color: #ccc;
+        }
+
+        .now-price {
+            font-size: 16px;
+        }
+
+        .layui-icon {
+            position: absolute;
+            right: 5px;
+            top: 7px;
+            font-size: 25px;
+            color: #fff;
+            background: @greenBackground;
+            border-radius: 50%;
+            overflow: hidden;
+            text-align: center;
+            padding: 2px 4px;
+            cursor: pointer;
+            &:hover{
+                background: #b22140;
+            }
+        }
+
+    }
+
+}
+
+/*是否存在*/
+@import "./exists";

@@ -1,6 +1,7 @@
 /*绿色背景色*/
 /*a :hover*/
 /*hack*/
+/*bordercolor*/
 /**
 ==================================================
 公共样式
@@ -434,9 +435,131 @@ body {
   color: #333 !important;
 }
 .g-floor .sidebar .layui-nav .layui-nav-mored,
-.g-floor .sidebar .layui-nav-itemed .layui-nav-more {
+.g-floor .sidebar .layui-nav-itemed .layui-nav-more,
+.g-floor .sidebar .layui-nav .layui-nav-more {
   border-color: transparent transparent #355a11;
 }
 .g-floor .content {
   width: 750px;
+}
+/*商品模块*/
+.m-shop-list {
+  margin-right: -10px;
+}
+.m-shop-list li {
+  width: 163px;
+  padding: 5px;
+  float: left;
+  border: 1px solid #e0e0e0;
+  margin-right: 10px;
+  -webkit-transition: border 0.3s linear, box-shadow 0.3s linear;
+  transition: border 0.3s linear, box-shadow 0.3s linear;
+}
+.m-shop-list li:hover {
+  border-color: #74a345;
+  box-shadow: 0 15px 30px rgba(116, 163, 69, 0.3);
+}
+.m-shop-list .title {
+  padding: 5px 0 10px 0;
+  font-weight: bold;
+}
+.m-shop-list .img-wrap {
+  display: block;
+  height: 140px;
+  overflow: hidden;
+}
+.m-shop-list .img-wrap .img {
+  width: 100%;
+}
+.m-shop-list .desc {
+  height: 40px;
+  padding: 5px 0;
+}
+.m-shop-list .price {
+  position: relative;
+}
+.m-shop-list .price .origin-price {
+  color: #ccc;
+}
+.m-shop-list .price .now-price {
+  font-size: 16px;
+}
+.m-shop-list .price .layui-icon {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  font-size: 25px;
+  color: #fff;
+  background: #74a345;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  padding: 2px 4px;
+  cursor: pointer;
+}
+.m-shop-list .price .layui-icon:hover {
+  background: #b22140;
+}
+/*是否存在*/
+.g-floor .exists {
+  padding: 0 20px;
+  height: 130px;
+}
+.g-floor .exists dl {
+  width: 33.33%;
+  float: left;
+  padding-top: 15px;
+}
+.g-floor .exists dt {
+  float: left;
+}
+.g-floor .exists dt img {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+}
+.g-floor .exists dd {
+  margin-left: 85px;
+}
+.g-floor .exists dd h2 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.g-floor .exists dd .more {
+  color: #74a345;
+}
+.g-floor .exists dd .logo-list img {
+  width: 50px;
+  height: 50px;
+}
+.g-floor .money-go {
+  padding-left: 20px;
+}
+.g-floor .money-go h2 {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.g-floor .money-go .item1,
+.g-floor .money-go .item3 {
+  width: 40%;
+  float: left;
+}
+.g-floor .money-go .item1 img,
+.g-floor .money-go .item3 img {
+  width: 110px;
+}
+.g-floor .money-go .item2 {
+  width: 20%;
+  float: left;
+}
+.g-floor .money-go .item3 {
+  padding-top: 23px;
+}
+.g-floor .money-go .item3 img {
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
 }
