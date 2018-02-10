@@ -682,6 +682,31 @@ body {
 .m-percen-nav hr {
   background-color: #e6e6e6;
 }
+.g-order-history .shop dt {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.g-order-history .shop dt img {
+  width: 100%;
+  height: 100%;
+}
+.g-order-history .shop dd {
+  margin-left: 65px;
+}
+/*未登录*/
+.g-nologin-zhaohui .form-sub {
+  background: #74a345;
+}
+.m-zhaohui-nav {
+  height: 40px;
+  line-height: 40px;
+}
+.m-zhaohui-nav li {
+  width: 33.333%;
+  float: left;
+  text-align: center;
+}
 .g-footer {
   margin-top: 50px;
   background: #274757;

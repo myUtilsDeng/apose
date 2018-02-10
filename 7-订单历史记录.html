@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>4-个人中心-个人资料-修改</title>
+    <title>7-订单历史记录</title>
     <link rel="stylesheet" href="./css/layui.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -165,161 +165,73 @@
                 </div>
                 <!--// 个人中心小导航-->
 
-                <form class="layui-form" action="">
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">单选框</label>
-                        <div class="layui-input-block">
-                            <input type="radio" name="sex" value="男" title="男" checked="">
-                            <input type="radio" name="sex" value="女" title="女">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">标题</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题"
-                                   class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">用户名</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="username" lay-verify="title" autocomplete="off"
-                                   placeholder="请输入用户名"
-                                   class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">名字</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="namename" lay-verify="required" placeholder="请输入名字"
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">姓</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="firstName" lay-verify="required" placeholder="请输入名字"
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">公司</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="company" placeholder="请输入公司"
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">验证必填项</label>
-                        <div class="layui-input-block">
-                            <input type="text" name="username" lay-verify="required" placeholder="请输入"
-                                   autocomplete="off" class="layui-input">
-                        </div>
-                    </div>
-
-
-                    <div class="layui-form-item">
-                        <div class="layui-inline">
-                            <label class="layui-form-label">出生日期</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd"
-                                       autocomplete="off" class="layui-input">
-                            </div>
-                        </div>
-                        <div class="layui-inline">
-                            <label class="layui-form-label">电子邮件</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="email" lay-verify="email" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <div class="layui-inline">
-                            <label class="layui-form-label">电话</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="tel" lay-verify="required" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-                        <div class="layui-inline">
-                            <label class="layui-form-label">手机</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="mobile" lay-verify="required|number" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <div class="layui-inline">
-                            <label class="layui-form-label">传真</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="chuanzhen" lay-verify="required|number" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-
-                        <div class="layui-inline">
-                            <label class="layui-form-label">街道</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="jiedao" lay-verify="required" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <div class="layui-inline">
-                            <label class="layui-form-label">门牌</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="menpai" lay-verify="required" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-                        <div class="layui-inline">
-                            <label class="layui-form-label">邮政编码</label>
-                            <div class="layui-input-inline">
-                                <input type="text" name="bianma" lay-verify="required" autocomplete="off"
-                                       class="layui-input">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">地方</label>
-                        <div class="layui-input-inline">
-                            <input type="text" name="difang" lay-verify="required" autocomplete="off"
-                                   class="layui-input">
-                        </div>
-                    </div>
-
-                    <div class="layui-form-item">
-                        <label class="layui-form-label">国家</label>
-                        <div class="layui-input-block">
-                            <select name="guojia" lay-filter="guojia">
-                                <option value=""></option>
-                                <option value="0" selected="">德国</option>
-                                <option value="1">法国</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <button class="layui-btn form-sub" lay-submit="">立即提交</button>
-                </form>
+                <div class="g-order-history">
+                    <table class="layui-table order-history" lay-skin="line">
+                        <colgroup>
+                            <col width="80">
+                            <col width="250">
+                            <col width="150">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>商品</th>
+                                <th>电话</th>
+                                <th>价格</th>
+                                <th>地址</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <div class="shop">
+                                        <dl>
+                                            <dt>
+                                                <a href="#">
+                                                    <img src="./img/shop.jpg" alt="">
+                                                </a>
+                                            </dt>
+                                            <dd>
+                                                <a href="#">
+                                                    手机手机手机手机手机手机手机手机手机手机
+                                                </a>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </td>
+                                <td>12345678910</td>
+                                <th>价格</th>
+                                <td>我家在德国</td>
+                            </tr>
+                            <tr>
+                            <td>2</td>
+                            <td>
+                                <div class="shop">
+                                    <dl>
+                                        <dt>
+                                            <a href="#">
+                                                <img src="./img/shop.jpg" alt="">
+                                            </a>
+                                        </dt>
+                                        <dd>
+                                            <a href="#">
+                                                手机手机手机手机手机手机手机手机手机手机
+                                            </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </td>
+                            <td>12345678910</td>
+                            <th>价格</th>
+                            <td>我家在德国</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-
         </div>
         <!--// 右侧内容栏目-->
-
     </div>
     <!--// 楼层-->
 
