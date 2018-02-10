@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>列表页</title>
+    <title>3-个人中心-个人资料</title>
     <link rel="stylesheet" href="./css/layui.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -85,13 +85,6 @@
           <a href="#">亚太地区</a>
           <a href="#"><cite>正文</cite></a>
         </span>
-        <div class="layui-btn-group">
-            <button class="layui-btn">价格 ↑</button>
-            <button class="layui-btn ">名称</button>
-            <button class="layui-btn">提供商</button>
-            <button class="layui-btn">可用</button>
-            <button class="layui-btn">有限公司</button>
-        </div>
     </div>
     <!--// 面包屑导航-->
 
@@ -143,94 +136,162 @@
 
         <!--右侧内容栏目-->
         <div class="content fr">
-            <ul class="m-shop-list cl">
-                <li>
-                    <h2 class="title">女性解决方案...</h2>
-                    <a href="#" class="img-wrap">
-                        <img class="img" width="150" src="./img/200x200.png" alt="">
-                    </a>
-                    <p class="desc">葛兰素史克消费者保健葛兰素史克消费者保健</p>
-                    <div class="price">
-                        <p class="origin-price">
-                            <del>￥:20</del>
-                        </p>
-                        <p class="now-price">￥:10</p>
-                        <i class="layui-icon">&#xe657;</i>
-                    </div>
-                </li>
-                <li>
-                    <h2 class="title">女性解决方案</h2>
-                    <a href="#" class="img-wrap">
-                        <img class="img" width="150" src="./img/200x200.png" alt="">
-                    </a>
-                    <p class="desc">葛兰素史克消费者保健葛兰素史克消费者保健</p>
-                    <div class="price">
-                        <p class="origin-price">
-                            <del>￥:20</del>
-                        </p>
-                        <p class="now-price">￥:10</p>
-                        <i class="layui-icon">&#xe657;</i>
-                    </div>
-                </li>
-                <li>
-                    <h2 class="title">女性解决方案</h2>
-                    <a href="#" class="img-wrap">
-                        <img class="img" width="150" src="./img/200x200.png" alt="">
-                    </a>
-                    <p class="desc">葛兰素史克消费者保健葛兰素史克消费者保健</p>
-                    <div class="price">
-                        <p class="origin-price">
-                            <del>￥:20</del>
-                        </p>
-                        <p class="now-price">￥:10</p>
-                        <i class="layui-icon">&#xe657;</i>
-                    </div>
-                </li>
-                <li>
-                    <h2 class="title">女性解决方案</h2>
-                    <a href="#" class="img-wrap">
-                        <img class="img" width="150" src="./img/200x200.png" alt="">
-                    </a>
-                    <p class="desc">葛兰素史克消费者保健葛兰素史克消费者保健</p>
-                    <div class="price">
-                        <p class="origin-price">
-                            <del>￥:20</del>
-                        </p>
-                        <p class="now-price">￥:10</p>
-                        <i class="layui-icon">&#xe657;</i>
-                    </div>
-                </li>
-                <li>
-                    <h2 class="title">女性解决方案</h2>
-                    <a href="#" class="img-wrap">
-                        <img class="img" width="150" src="./img/200x200.png" alt="">
-                    </a>
-                    <p class="desc">葛兰素史克消费者保健葛兰素史克消费者保健</p>
-                    <div class="price">
-                        <p class="origin-price">
-                            <del>￥:20</del>
-                        </p>
-                        <p class="now-price">￥:10</p>
-                        <i class="layui-icon">&#xe657;</i>
-                    </div>
-                </li>
-            </ul>
-            <!--分页-->
-            <div class="m-page-nav">
-                <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-2">
-                    <a href="javascript:;" class="layui-laypage-prev layui-disabled" data-page="0">上一页</a>
-                    <span class="layui-laypage-curr">
-                    <em class="layui-laypage-em"></em><em>1</em>
-                </span>
-                    <a href="javascript:;" href="javascript:;" data-page="3">3</a>
-                    <a href="javascript:;" data-page="4">4</a>
-                    <a href="javascript:;" data-page="5">5</a>
-                    <span class="layui-laypage-spr">…</span>
-                    <a href="javascript:;" class="layui-laypage-last" title="尾页" data-page="7">7</a>
-                    <a href="javascript:;" class="layui-laypage-next" data-page="2">下一页</a>
+
+
+            <div class="g-person-center">
+                <!--个人中心小导航-->
+                <div class="m-percen-nav">
+                    <ul>
+                        <li>
+                            <a href="#">个人资料</a>
+                        </li>
+                        <li>
+                            <a href="#">更改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">保存的地址</a>
+                        </li>
+                        <li>
+                            <a href="#">注册码</a>
+                        </li>
+                        <li>
+                            <a href="#">订单历史记录</a>
+                        </li>
+                        <li>
+                            <a href="#">购物清单</a>
+                        </li>
+                    </ul>
+                    <hr>
                 </div>
+                <!--// 个人中心小导航-->
+                <table class="layui-table" lay-even="" lay-skin="row">
+                    <colgroup>
+                        <col width="150">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th>登录：</th>
+                        <th>873115982@qq.com</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>名称：</td>
+                        <td>猴子</td>
+                    </tr>
+                    <tr>
+                        <td>生日：</td>
+                        <td>1991年3月4日</td>
+                    </tr>
+                    <tr>
+                        <td>电子信箱：</td>
+                        <td>873115982@qq.com</td>
+                    </tr>
+                    <tr>
+                        <td>街道：</td>
+                        <td>猴子</td>
+                    </tr>
+                    <tr>
+                        <td>大厦：</td>
+                        <td>1106</td>
+                    </tr>
+
+                    <tr>
+                        <td>电子信箱：</td>
+                        <td>873115982@qq.com</td>
+                    </tr>
+                    <tr>
+                        <td>邮编：</td>
+                        <td>26133</td>
+                    </tr>
+                    <tr>
+                        <td>地点：</td>
+                        <td>柏林</td>
+                    </tr>
+                    <tr>
+                        <td>国家：</td>
+                        <td>德国</td>
+                    </tr>
+                    <tr>
+                        <td>手机：</td>
+                        <td>15129720900</td>
+                    </tr>
+                    <tr>
+                        <td>电话：</td>
+                        <td>15129720900</td>
+                    </tr>
+                    <tr>
+                        <td>手机：</td>
+                        <td>15129720900</td>
+                    </tr>
+                    <tr>
+                        <td>传真：</td>
+                        <td>15129720900</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <a href="#" class="layui-btn edit-person">修改个人资料</a>
+
+
+                <!--地址列表-->
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>地址列表</legend>
+
+                    <table class="layui-table address-list" lay-skin="line">
+                        <colgroup>
+                            <col width="150">
+                            <col width="150">
+                            <col width="200">
+                            <col>
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>姓名</th>
+                            <th>电话</th>
+                            <th>邮编</th>
+                            <th>地址</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>邓志强</td>
+                            <td>12345678910</td>
+                            <td>1910-10-14</td>
+                            <td>我家在德国</td>
+                            <td>
+                                <button class="layui-btn layui-btn-sm">编辑</button>
+                                <button class="layui-btn layui-btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>邓志强</td>
+                            <td>12345678910</td>
+                            <td>1910-10-14</td>
+                            <td>我家在德国</td>
+                            <td>
+                                <button class="layui-btn layui-btn-sm">编辑</button>
+                                <button class="layui-btn layui-btn-sm">删除</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </fieldset>
+
+                <!--// 地址列表-->
+
+
+                <!--新增地址-->
+                <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+                    <legend>新增地址</legend>
+                </fieldset>
+                <a href="#" class="layui-btn edit-person">添加新地址</a>
+                <!--// 新增地址-->
+
             </div>
-            <!--// 分页-->
+
+
         </div>
         <!--// 右侧内容栏目-->
 

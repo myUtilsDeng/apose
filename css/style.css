@@ -642,6 +642,46 @@ body {
 .m-page-nav .layui-laypage .layui-laypage-curr .layui-laypage-em {
   background-color: #74a345;
 }
+.g-person-center {
+  padding-right: 10px;
+  padding-bottom: 50px;
+}
+.g-person-center .layui-table {
+  margin-top: 0;
+}
+.g-person-center .edit-person {
+  background: #74a345;
+}
+.g-person-center .form-sub {
+  background: #74a345;
+  display: block;
+  margin: 0 auto;
+}
+.g-person-center .pwd-wrap .layui-input {
+  width: 80%;
+}
+.g-person-center .address-list {
+  margin-top: 10px;
+}
+.g-person-center .layui-btn-sm {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 12px;
+  background: #74a345;
+}
+.m-percen-nav {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.m-percen-nav li {
+  float: left;
+  padding: 0 15px;
+}
+.m-percen-nav hr {
+  background-color: #e6e6e6;
+}
 .g-footer {
   margin-top: 50px;
   background: #274757;

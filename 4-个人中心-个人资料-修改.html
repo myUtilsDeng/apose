@@ -1,0 +1,435 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>4-个人中心-个人资料-修改</title>
+    <link rel="stylesheet" href="./css/layui.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="w">
+    <!--头部-->
+    <div class="g-header">
+        <div class="site-topbar">
+            <div class="container">
+                <div class="topbar-nav">
+                    <a href="#" class="snc-link snc-order">apoase您的在线药房!</a>
+                </div>
+
+                <div class="topbar-info J_userInfo" id="ECS_MEMBERZONE">
+                    <a class="link" href="#" rel="nofollow">登录</a>
+                    <a class="link" href="#" rel="nofollow">注册</a>
+                    <span class="link"><b>免费服务电话：</b> +49（0）800 700 71 00</span>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header-bot">
+            <!--logo-->
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!--// logo-->
+
+            <!--搜索框-->
+            <div class="header-search">
+                <form action="#" method="get" id="searchForm" name="searchForm"
+                      onsubmit="return checkSearchForm()" class="search-form cl">
+                    <input class="search-text" type="text" name="keywords" id="keyword" value="" autocomplete="off">
+                    <button type="submit" class="search-btn iconfontecs"></button>
+                </form>
+            </div>
+            <!--// 搜索框-->
+
+            <!--购物车-->
+            <div class="topbar-cart" id="ECS_CARTINFO">
+                <a class="cart-mini " href="#">
+                    <i class="iconfontecs"></i>
+                    购物车
+                    <span class="mini-cart-num J_cartNum" id="hd_cartnum">(0)</span>
+                </a>
+                <div id="J_miniCartList" class="cart-menu" style="display: none;">
+                    <p class="loading">购物车中还没有商品，赶紧选购吧！</p>
+
+                </div>
+            </div>
+            <!--// 购物车-->
+        </div>
+    </div>
+    <!--// 头部-->
+
+    <!--水平导航-->
+    <div class="g-nav">
+        <ul class="nav-list">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">特别优惠</a></li>
+            <li><a href="#">冷</a></li>
+            <li><a href="#">母亲和孩子</a></li>
+            <li><a href="#">PAIN</a></li>
+            <li><a href="#">重做食谱</a></li>
+        </ul>
+    </div>
+    <!--// 水平导航-->
+
+    <!--面包屑导航-->
+    <div class="g-breadcrumb">
+         <span class="layui-breadcrumb" lay-separator="/">
+          <a href="#">首页</a>
+          <a href="#">国际新闻</a>
+          <a href="#">亚太地区</a>
+          <a href="#"><cite>正文</cite></a>
+        </span>
+    </div>
+    <!--// 面包屑导航-->
+
+    <!--楼层-->
+    <div class="g-floor cl">
+        <!--侧边栏-->
+        <div class="sidebar fl">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="dt" href="javascript:;">过敏和干草热</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">口服药物</a></dd>
+                        <dd><a href="javascript:;">眼睛</a></dd>
+                        <dd><a href="javascript:;">鼻子</a></dd>
+                        <dd><a href="javascript:;">过敏性皮肤反应</a></dd>
+                        <dd><a href="javascript:;">替代的补救措施</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="dt" href="javascript:;">过敏和干草热</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">口服药物</a></dd>
+                        <dd><a href="javascript:;">眼睛</a></dd>
+                        <dd><a href="javascript:;">鼻子</a></dd>
+                        <dd><a href="javascript:;">过敏性皮肤反应</a></dd>
+                        <dd><a href="javascript:;">替代的补救措施</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item layui-nav-itemed">
+                    <a class="dt" href="javascript:;">过敏和干草热</a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="javascript:;">口服药物</a></dd>
+                        <dd><a href="javascript:;">眼睛</a></dd>
+                        <dd><a href="javascript:;">鼻子</a></dd>
+                        <dd><a href="javascript:;">过敏性皮肤反应</a></dd>
+                        <dd><a href="javascript:;">替代的补救措施</a></dd>
+                    </dl>
+                </li>
+
+                <li class="layui-nav-item">
+                    <a class="dt" href="">孩子和家庭</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a class="dt" href="">其他补救措施</a>
+                </li>
+            </ul>
+        </div>
+        <!--// 侧边栏-->
+
+        <!--右侧内容栏目-->
+        <div class="content fr">
+
+
+            <div class="g-person-center">
+                <!--个人中心小导航-->
+                <div class="m-percen-nav">
+                    <ul>
+                        <li>
+                            <a href="#">个人资料</a>
+                        </li>
+                        <li>
+                            <a href="#">更改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">保存的地址</a>
+                        </li>
+                        <li>
+                            <a href="#">注册码</a>
+                        </li>
+                        <li>
+                            <a href="#">订单历史记录</a>
+                        </li>
+                        <li>
+                            <a href="#">购物清单</a>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <!--// 个人中心小导航-->
+
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">单选框</label>
+                        <div class="layui-input-block">
+                            <input type="radio" name="sex" value="男" title="男" checked="">
+                            <input type="radio" name="sex" value="女" title="女">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">标题</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="title" lay-verify="title" autocomplete="off" placeholder="请输入标题"
+                                   class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="username" lay-verify="title" autocomplete="off"
+                                   placeholder="请输入用户名"
+                                   class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">名字</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="namename" lay-verify="required" placeholder="请输入名字"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">姓</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="firstName" lay-verify="required" placeholder="请输入名字"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">公司</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="company" placeholder="请输入公司"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">验证必填项</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="username" lay-verify="required" placeholder="请输入"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+
+
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">出生日期</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="date" id="date" lay-verify="date" placeholder="yyyy-MM-dd"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">电子邮件</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="email" lay-verify="email" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">电话</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="tel" lay-verify="required" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">手机</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="mobile" lay-verify="required|number" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">传真</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="chuanzhen" lay-verify="required|number" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">街道</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="jiedao" lay-verify="required" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            <label class="layui-form-label">门牌</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="menpai" lay-verify="required" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-inline">
+                            <label class="layui-form-label">邮政编码</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="bianma" lay-verify="required" autocomplete="off"
+                                       class="layui-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">地方</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="difang" lay-verify="required" autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">国家</label>
+                        <div class="layui-input-block">
+                            <select name="guojia" lay-filter="guojia">
+                                <option value=""></option>
+                                <option value="0" selected="">德国</option>
+                                <option value="1">法国</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="layui-btn form-sub" lay-submit="">立即提交</button>
+                </form>
+            </div>
+
+
+        </div>
+        <!--// 右侧内容栏目-->
+
+    </div>
+    <!--// 楼层-->
+
+
+</div>
+
+
+<!--底部-->
+<div class="g-footer">
+    <div class="m-footer">
+        <div class="list cl">
+            <dl>
+                <dt>
+                    公司
+                </dt>
+                <dd><a href="#">· 关于我们</a></dd>
+                <dd><a href="#">· 工作与职业</a></dd>
+                <dd><a href="#">· 按</a></dd>
+            </dl>
+            <dl>
+                <dt>手术</dt>
+                <dd><a href="#">· 顺序</a></dd>
+                <dd><a href="#">· 运送和交付</a></dd>
+                <dd><a href="#">· 兑换食谱</a></dd>
+                <dd><a href="#">· 打印免费门票</a></dd>
+                <dd><a href="#">· 问题与解答</a></dd>
+            </dl>
+            <dl>
+                <dt>法律</dt>
+                <dd><a href="#">· 付款</a></dd>
+                <dd><a href="#">· 隐私政策</a></dd>
+                <dd><a href="#">· 条件</a></dd>
+                <dd><a href="#">· 废止</a></dd>
+                <dd><a href="#">· 版本说明</a></dd>
+                <dd><a href="#">· 接触</a></dd>
+            </dl>
+        </div>
+        <div class="copyright">
+            <p>
+                AVP：通常药房销售价格根据药品价格管制计算。MSRP：来自制造商的建议零售价格。指示价格包括法定增值税。德国境内免运费，最低订单价值20欧元。价格变化和错误例外。所有优惠和免费礼物只有当股票持续。</p>
+            <p>有关风险和副作用，请阅读包装说明或咨询您的医生或药剂师。</p>
+        </div>
+    </div>
+</div>
+<!--// 底部-->
+
+<script src="layui.all.js"></script>
+
+<script>
+    var element = layui.element;
+    var jQuery = $ = layui.$;
+    var laydate = layui.laydate;
+    //监听导航点击
+    element.on('nav(demo)', function (elem) {
+        console.log(elem)
+    });
+</script>
+<script src="./js/jquery.jcarousellite.js"></script>
+<script>
+    /**
+     * 判断搜素框是否有内容
+     *
+     * */
+    function checkSearchForm() {
+        if (document.getElementById('keyword').value) {
+            return true;
+        }
+        else {
+            alert("请输入搜索关键词！");
+            return false;
+        }
+    }
+
+    /*购物车弹出 strat*/
+    $("#ECS_CARTINFO").on("mouseenter", function () {
+        $(this).addClass("topbar-cart-active");
+        $(this).find(".cart-menu").slideDown();
+    }).on("mouseleave", function () {
+        $(this).removeClass("topbar-cart-active");
+        $(this).find(".cart-menu").stop().slideUp(300, function () {
+            $(".cart-section").removeClass("cart-section-on");
+        });
+    });
+    /*购物车弹出 end*/
+    /*轮播*/
+    var carousel = layui.carousel;
+    //建造实例
+    carousel.render({
+        elem: '#indexCarousel'
+        , width: '100%' //设置容器宽度
+        , arrow: 'always' //始终显示箭头
+        //,anim: 'updown' //切换动画方式
+    });
+    /*// 轮播*/
+
+    $(".custom-container .carousel").jCarouselLite({
+        btnNext: ".custom-container .next",
+        btnPrev: ".custom-container .prev",
+        visible: 6,
+        auto: 2000
+    });
+
+    /**
+     * 表单区域
+     */
+    (function () {
+
+        laydate.render({
+            elem: '#date'
+        });
+    })();
+</script>
+</body>
+</html>
